@@ -28,41 +28,36 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
+  { label: "Months of experience", value: "6" },
   { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Companies worked with", value: "2" },
 ];
 
 const projects = [
+  
   {
-    title: "Unqueue",
-    description: "E-commerce platform for selling digital products",
-    image: "/assets/unqueue.webm",
-    href: "https://unqueue.shop/",
+    title: "SightScan",
+    description: "SightScan: Empowering the Visually Impaired People.",
+    image: "/assets/sightcan.png",
+    href: "https://github.com/codewithdeepesh29/Indian_Currency_API",
   },
   {
-    title: "InfiniteVPS",
-    description: "High performance VPS hosting solution",
-    image: "/assets/infinitevps.webm",
-    href: "#",
-  },
-  {
-    title: "TranslateBot",
-    description: "Powerful Multilingual Translation Bot for Discord",
-    image: "/assets/translate_bot.webm",
+    title: "Portfolio-Website",
+    description: "Developed an Portfolio Website for Software Developer",
+    image: "/assets/portfolio.webm",
     href: "https://translatebot.app/",
   },
   {
-    title: "Wrona",
-    description: "Robotics-focused technology company",
-    image: "/assets/wrona.jpeg",
-    href: "https://www.wrona.com/",
+    title: "Fast-n-Fitness Master",
+    description: "An Application on Gym, which tracks your daily exercices",
+    image: "/assets/fnf.png",
+    href: "https://github.com/codewithdeepesh29/Indian_Currency_API",
   },
   {
-    title: "This website",
-    description: "My personal website",
-    image: "/assets/portfolio.webm",
-    href: "https://github.com/wendoj/portfolio",
+    title: "Resume Based Job Platform",
+    description: "The job searching using your Resume.",
+    image: "/assets/resume.webm",
+    href: "https://github.com/codewithdeepesh29/Resume_Based_Job_Platform",
   },
 ];
 
@@ -190,9 +185,10 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>node.js</span>
+              <span className={styles.pill}>JavaScript</span>
+              <span className={styles.pill}>TypeScript</span>
+              <span className={styles.pill}>React</span>
             </div>
             <div>
               <h1
@@ -206,7 +202,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Deepesh Katudia.
                 </span>
               </h1>
               <p
@@ -225,17 +221,22 @@ export default function Home() {
               data-scroll-speed=".06"
               className="flex flex-row items-center space-x-1.5 pt-6"
             >
-              <Link href="mailto:wendoj@proton.me" passHref>
+              <Link href="mailto:dk72660n@pace.edu" passHref>
                 <Button>
                   Get in touch <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
-              <Button
-                variant="outline"
-                onClick={() => scrollTo(document.querySelector("#about"))}
+            <Button
+              variant="outline"
+              onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/developer-portfolio/public/Deepesh_Haresh_Katudia.pdf"; // Replace with your actual PDF file path
+              link.download = "Deepesh_Katudia_Resume.pdf"; // Set the name for the downloaded file
+              link.click();
+              }}
               >
-                Learn more
-              </Button>
+              Learn More
+            </Button>
             </span>
 
             <div
@@ -269,19 +270,19 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
+              I&apos;m an aspiring full-stack developer proficient in{" "}
               <Link
-                href="https://create.t3.gg/"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 className="underline"
               >
-                TypeScript, Tailwind, and Next.js
+                JavaScript, Node.Js, and React
               </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              with a strong foundation in C/C++, Python, JavaScript, React, and SQL. Experienced in 
+              web development, API integration, and machine learning through impactful internships and projects like an 
+              Resume Based Job platform and SightScan: Empowering the visually Impaired People !!! for accessibility. Proven 
+              ability to write efficient, clean code  and collaborate in cross-functional teams to deliver innovative and 
+              user-centric solutions. Passionate about leveraging technology to solve real-world problems..
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
@@ -326,7 +327,7 @@ export default function Home() {
               Streamlined digital experiences.
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;ve worked on a variety of projects, from small websites to
+              I&apos;ve worked on a variety of projects, aim to convert small websites to
               large-scale web applications. Here are some of my favorites:
             </p>
 
@@ -446,7 +447,7 @@ export default function Home() {
               I&apos;m currently available for freelance work and open to
               discussing new projects.
             </p>
-            <Link href="mailto:wendoj@proton.me" passHref>
+            <Link href="mailto:dk72660n@pace.edu" passHref>
               <Button className="mt-6">Get in touch</Button>
             </Link>
           </div>

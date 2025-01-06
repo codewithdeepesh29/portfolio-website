@@ -211,7 +211,7 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
+                An full-stack website developer with a passion for
                 crafting unique digital experiences.
               </p>
             </div>
